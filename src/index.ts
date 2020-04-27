@@ -12,10 +12,10 @@ export default Vue.extend({
     return { countdown: { remainingTime: 0 } };
   },
   destroyed() {
-    clearInterval(this.countdown.intervalId);
+    this.stopCountdown();
   },
   methods: {
-    createInterval(intervalHandler: () => any, period: number) {
+    startCountdown(intervalHandler: () => any, period: number) {
       const handle = () => {
         const elapsed = getCurrentSeconds() % period;
         this.countdown.remainingTime = period - elapsed;
@@ -25,7 +25,7 @@ export default Vue.extend({
       };
       this.countdown.intervalId = setInterval(handle, 1000);
     },
-    clearInterval() {
+    stopCountdown() {
       if (this.countdown.intervalId != undefined) {
         clearInterval(this.countdown.intervalId);
       }
