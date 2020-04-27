@@ -1,8 +1,7 @@
 {
-  "name": "use-countdown",
+  "name": "vue-use-countdown",
   "version": "0.0.1",
   "description": "A Vue mixin that provides countdown timer functionality",
-  "main": "index.js",
   "repository": "https://github.com/aidenscott2016/vue-use-countdown",
   "author": "Aiden Scott <aidenscott12@googlemail.com>",
   "license": "MIT",
@@ -12,5 +11,10 @@
   "devDependencies": {
     "@types/vue": "^2.0.0",
     "tsc": "^1.20150623.0"
-  }
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index.d.ts",
+  "main": "lib/index.js"
 }
