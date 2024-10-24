@@ -6,7 +6,7 @@
   "author": "Aiden Scott <aidenscott12@googlemail.com>",
   "license": "MIT",
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@types/vue": "^2.0.0",
